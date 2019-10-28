@@ -127,12 +127,12 @@ function initialize()
 	
 	new THREE.MTLLoader()
 		.setPath( 'models/' )
-		.load( 'pink.mtl', function ( materials ) {
+		.load( 'red.mtl', function ( materials ) {
 			materials.preload();
 			new THREE.OBJLoader()
 				.setMaterials( materials )
 				.setPath( 'models/' )
-				.load( 'pink.obj', function ( group ) {
+				.load( 'red.obj', function ( group ) {
 					mesh0 = group.children[0];
 					mesh0.material.side = THREE.DoubleSide;
 					mesh0.position.y = 0.25;
