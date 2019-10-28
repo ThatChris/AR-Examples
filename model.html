@@ -131,7 +131,7 @@ function initialize()
 			materials.preload();
 			new THREE.OBJLoader()
 				.setMaterials( materials )
-				.setPath( 'models/' )
+				.setPath( 'tree/master/models' )
 				.load( 'red.obj', function ( group ) {
 					mesh0 = group.children[0];
 					mesh0.material.side = THREE.DoubleSide;
